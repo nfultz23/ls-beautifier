@@ -1,10 +1,6 @@
-This is a Bash 'ls' command beautifier. Currenty, there are no options enabled, but in the
-future I plan to add customizable colors for directories, links, and various extensions, as
-well as custom ordering for groups of files.
+This is a Bash 'ls' command beautifier. Currenty, there are no options enabled, but in the future I plan to add customizable colors for directories, links, and various extensions, as well as custom ordering for groups of files.
 
-To use the beautifier, please use the C compiler of your choice to compile the 'lsform.c'
-file into an executable named '.lsform', then place it in the home directory alongside
-your '.bashrc' file.
+To use the beautifier, please use the C compiler of your choice to compile the 'lsform.c' file into an executable named '.lsform', then place it in the home directory alongside your '.bashrc' file.
 
 Inside your '.bashrc' file, add the following command:
 
