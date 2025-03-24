@@ -1,0 +1,21 @@
+This is a Bash 'ls' command beautifier. Currenty, there are no options enabled, but in the
+future I plan to add customizable colors for directories, links, and various extensions, as
+well as custom ordering for groups of files.
+
+To use the beautifier, please use the C compiler of your choice to compile the 'lsform.c'
+file into an executable named '.lsform', then place it in the home directory alongside
+your '.bashrc' file.
+
+Inside your '.bashrc' file, add the following command:
+
+       alias ls="ls -o --group-directories-first --human-readable -A > ~/.lstxt; ~/.lsform ${USER} < ~/.lstxt; rm ~/.lstxt"
+
+Now, just call 'source ~/.bashrc' to make this work. Now, your 'ls' command is beautified!
+
+
+Future plans:
+ - Customizable sorting (directories first, links first, alphabetize all, etc.)
+ - Customizable colors (plug in values from 1..255 to set colors)
+ - Customizable file extensions (specify file types to recieve special colors)
+ - Use a makefile to automatically update the .bashrc file with necessary targets
+ - Add a help directive to explain the features when they're added
